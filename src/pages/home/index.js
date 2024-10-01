@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowAltCircleRight, FaArrowCircleLeft, FaArrowRight } from "react-icons/fa";
 
 import { HomeButton } from "../../components/button/index.js";
+import HealthTipContainer from "../../components/healthTipsContainer/index.js";
 import assets from "../../assets/index.js";
 import Path from "../../navigations/constants.js"
 
@@ -191,9 +192,37 @@ const Home = () => {
                 <img src={assets.google} alt="google"/>
             </div>
         </section>
+        <section className="mb-1em">
+            <div className="container">
+                <HealthTipContainer data={healthData} />
+            </div>    
+        </section>
 
     </> 
 );
 }
  
 export default Home;
+
+const  healthData = [
+    {
+        title:"Health tip: with the main photo and the headline ...",
+        date:"20th June 2024",
+        image:assets.tip1
+    },
+    {
+        title:"Health tip: with the main photo and the headline ...",
+        date:"20th June 2024",
+        image:assets.tip2
+    },
+    {
+        title:"Health tip: with the main photo and the headline ...",
+        date:"20th June 2024",
+        image:assets.tip3
+    },
+    {
+        title:"Health tip: with the main photo and the headline ...",
+        date:"20th June 2024",
+        image:assets.tip4
+    },
+]
