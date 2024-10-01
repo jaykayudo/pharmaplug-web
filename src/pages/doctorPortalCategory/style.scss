@@ -1,0 +1,52 @@
+.doctor-details-box{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+    margin-bottom: 0.7em;
+    height: 489px;
+    div{
+        padding: 1em;
+        border-radius: 10px;
+        background-color: #ffffff6c;
+        h3{
+            font-weight: bold;
+        }
+        
+    }
+}
+.doctor-search-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 0;
+    box-shadow: 0px 4px 20px 0px #e4e4e47a;
+    border-radius: 10px;
+    margin-top: 1em;
+
+    .single-filter{
+        padding: 0 0.8em;
+        flex: 1;
+        border-right: 1px solid #D9D9D9;
+        h4{
+            font-weight: 500;
+            margin-bottom: 0.3em;
+        }
+        input{
+            border: none;
+            background: none;
+            outline: none;
+            color: #D9D9D9;
+            font-size: 14px;
+        }
+        select{
+            border: none;
+            background: none;
+            outline: none;
+            color: #D9D9D9;
+            font-size: 14px;
+        }
+    }
+}
